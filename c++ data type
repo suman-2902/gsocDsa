@@ -35,6 +35,50 @@ int main(){
     cin>> a >> b;
     cout<< a<<endl<< b<<endl;
     c = a+b ;
-    cout<< fixed << setprecision(2)<< c ;  
+    cout<< fixed << setprecision(2)<< c ;
+    }
+    
+    
+write a program in c++ to print an array
+code--
+#include <bits/stdc++.h>
+ int main(){
+    vector<int> A;
+    cout << "enter size of array\n";
+    int n ;
+    cin>> n;
+    cout << "enter your array\n";
+    int p;
+    for(int i=0;i<n;i++){
+        cin>>p;
+        A.push_back(p);     
+    }   
+    cout<< "your array\n";
+    for(int i=0;i<n;i++){
+        cout<<A[i]<<" ";
+    }
+    return 0;
 }
-
+ 
+write a program in c++ to print a string
+code--
+#include <bits/stdc++.h>
+ 
+int main(){
+    vector<string> A;
+    cout << "enter size of array\n";
+    int n ;
+    cin>> n;
+    cout << "enter your array\n";
+    string p;
+    for(int i=0;i<n;i++){
+        cin>>p;
+        A.push_back(p);     
+    }   
+    cout<< "your array\n";
+    for(int i=0;i<n;i++){
+        cout<<A[i]<<" ";
+    }
+    return 0;
+}
+ 
