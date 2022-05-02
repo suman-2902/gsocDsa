@@ -82,3 +82,30 @@ int main(){
     return 0;
 }
  
+write a program in c++ to print an array using while loop
+code--
+#include <bits/stdc++.h>
+ 
+int main(){
+    vector<int> A;
+    cout << "enter size of array\n";
+    int n ;
+    cin>> n;
+    int i=0;
+    cout << "enter your array\n";
+    int p;
+    while(i<n){
+        cin>>p;
+        A.push_back(p); 
+        i++;
+        
+    }   
+    int j=0;
+    cout<< "your array\n";
+    while(j<n){
+        ;;cout<<A[j]<<" ";
+        j++;
+    }
+    return 0;
+}
+ 
