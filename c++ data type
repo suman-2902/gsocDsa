@@ -1,0 +1,40 @@
+write a program in c++ to print sum of two numbers
+code--
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    int a,b, c;
+    cout<< "enter two numbers a, b \n";
+    cin>> a >> b;
+    cout<< a<<endl<< b<<endl;
+    c = a+b ;
+    cout << c ;  
+}
+
+write a program in c++ to print sum of two decimal numbers
+code--
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    double a,b, c;
+    cout<< "enter two numbers a, b \n";
+    cin>> a >> b;
+    cout<< a<<endl<< b<<endl;
+    c = a+b ;
+    cout << c ;  
+}
+
+write a program in c++ to print sum of two decimal numbers upto two decimal places
+code--
+
+#include <bits/stdc++.h>
+using namespace std;
+int main(){
+    double a,b, c;
+    cout<< "enter two numbers a, b \n";
+    cin>> a >> b;
+    cout<< a<<endl<< b<<endl;
+    c = a+b ;
+    cout<< fixed << setprecision(2)<< c ;  
+}
+
