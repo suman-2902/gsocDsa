@@ -1,5 +1,5 @@
-write a program in c++ to print sum of two numbers
-code--
+//write a program in c++ to print sum of two numbers
+//code--
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
@@ -11,8 +11,8 @@ int main(){
     cout << c ;  
 }
 
-write a program in c++ to print sum of two decimal numbers
-code--
+//write a program in c++ to print sum of two decimal numbers
+//code--
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
@@ -24,8 +24,8 @@ int main(){
     cout << c ;  
 }
 
-write a program in c++ to print sum of two decimal numbers upto two decimal places
-code--
+//write a program in c++ to print sum of two decimal numbers upto two decimal places
+//code--
 
 #include <bits/stdc++.h>
 using namespace std;
@@ -39,8 +39,8 @@ int main(){
     }
     
     
-write a program in c++ to print an array
-code--
+//write a program in c++ to print an array
+//code--
 #include <bits/stdc++.h>
  int main(){
     vector<int> A;
@@ -60,8 +60,8 @@ code--
     return 0;
 }
  
-write a program in c++ to print a string
-code--
+//write a program in c++ to print a string
+//code--
 #include <bits/stdc++.h>
  
 int main(){
@@ -82,8 +82,8 @@ int main(){
     return 0;
 }
  
-write a program in c++ to print an array using while loop
-code--
+//write a program in c++ to print an array using while loop
+//code--
 #include <bits/stdc++.h>
  
 int main(){
