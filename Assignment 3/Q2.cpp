@@ -1,4 +1,5 @@
 #include <bits/stdc++.h>
+using namespace std;
 
 void update(int *a,int *b) {
      
