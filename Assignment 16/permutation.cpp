@@ -2,23 +2,23 @@
 public:
     vector<vector<int>> result;
     
-    void dfs(vector<int> &nums, int A){
+    void permutation(vector<int> &num, int A){
         
-        if(A==nums.size()) {
-            result.push_back(nums);
+        if(A==num.size()) {
+            result.push_back(num);
             return;
         }
         else{
-            for(int i=A;i<nums.size();i++){
-                swap(nums[i],nums[A]);
-                dfs(nums,A+1);
-                swap(nums[i],nums[A]);
+            for(int i=A;i<num.size();i++){
+                swap(num[i],num[A]);
+                permutation(num,A+1);
+                swap(num[i],num[A]);
             }
         }
     }
     
-    vector<vector<int>> permute(vector<int>& nums) {
-        dfs(nums,0);
+    vector<vector<int>> permute(vector<int>& num) {
+        permutation(num,0);
         return result;
     }
 };
