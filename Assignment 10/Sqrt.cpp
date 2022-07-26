@@ -1,23 +1,28 @@
  class Solution {
 public:
-    typedef unsigned long long ULL;
-    int mySqrt(ULL x) {
-        ULL beg=1;
-        ULL end=x;
-        ULL sqrt=x;
-        while(beg<=end){
-            ULL mid=(beg+end)/2;
-            if(mid*mid==x){
-                 return mid;
+    int mySqrt(int x) {
+        long long int mid,ans =x;
+        int high =x,low=0;
+        if(x==1)
+            return 1;
+        if(x==0)
+            return 0;
+        while(low<high)
+        {
+            mid=(low+high)/2;
+            
+            if(mid*mid==x)
+                return mid;
+            else if(mid*mid<x)
+            {   ans= mid;
+                low= mid+1;
+                
             }
-            else if(mid*mid>x){
-                end=mid-1;
-            }else{
-                sqrt=mid;
-                beg=mid+1;
+            else if(mid*mid>x)
+            {
+                high = mid ;
             }
         }
-        return sqrt;
-        
+        return ans;
     }
 };
