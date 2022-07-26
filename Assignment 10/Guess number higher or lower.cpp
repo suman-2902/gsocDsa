@@ -1,23 +1,20 @@
-class Solution {
+  class Solution {
 public:
-    typedef unsigned long long ULL;
-    int guessNumber(ULL num) {
-        ULL g;
-        ULL beg=1,end=num;
-        while(beg<=end){
-            ULL mid=(beg+end)/2;
-            g=guess(mid);
-            if(g==0){
-                return mid;
-            }
-            else if(g==-1){
-                end=mid-1;
-            }
-            else{
-                beg=mid+1;
-            }
+    int guessNumber(int n) {
+           
+   int l = 0;
+        int r = n;
+        while(l<=r){
+        int mid = l+(r-l)/2;
+        int result = guess(mid);
+        if(result==0)return mid;
+        else if(result==-1)r = mid-1;
+        else l=mid+1;
+            
+        
         }
-        return 0;
-       
+        return -1;
     }
+        
+
 };
